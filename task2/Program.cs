@@ -8,5 +8,15 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-if  (num1 > num2) Console.WriteLine($"Число {num1} больше чем число {num2}");
-else Console.WriteLine($"Число {num1} меньше чем число {num2}");
+if  (num1 > num2) 
+{
+    Console.WriteLine($"Число {num1} больше чем число {num2}");
+}
+else if (num1 < num2)
+{
+    Console.WriteLine($"Число {num1} меньше чем число {num2}");
+}
+else if (num1 == num2)
+{
+    Console.WriteLine($"Очень умно, введите не одинаковые числа");
+}
